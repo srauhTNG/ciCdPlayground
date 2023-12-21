@@ -21,9 +21,11 @@ https://cicd-workshop-playground.s3.amazonaws.com/$GITHUB_USERNAME/index.html
 # The tools
 ## Github Actions
 Running out of the box on, well, Github, see `.github`.
-## Jenkins (WIP)
-There is a Jenkinsfile present. 
-Current status has to be checked.
+## Jenkins
+The present Jenkinsfile works on the workshop Jenkins.
+Unfortunately s3Uploader does not support configuration as code.
+Thus, it might be necessary to got to Jenkins systems settings and 
+configure an "Amazon S3 profile" with name "role-based-access" and "Use IAM Role" checked. 
 ## Gitlab CI
 There is a `.gitlab-ci.yml` with working test stages. Deployment has to be checked.
 ## TeamCity (POC)
